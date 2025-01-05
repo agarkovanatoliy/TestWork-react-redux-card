@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TestWork-react-redux-card/static/css/main.43eadc29.css",
+    "main.js": "/TestWork-react-redux-card/static/js/main.a8998543.js",
+    "index.html": "/TestWork-react-redux-card/index.html",
+    "main.43eadc29.css.map": "/TestWork-react-redux-card/static/css/main.43eadc29.css.map",
+    "main.a8998543.js.map": "/TestWork-react-redux-card/static/js/main.a8998543.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43eadc29.css",
+    "static/js/main.a8998543.js"
+  ]
+}
