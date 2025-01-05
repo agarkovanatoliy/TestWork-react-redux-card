@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+# Тестовое задание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Тестовое задание необходимо выполнить только с указанным стэком и прислать две ссылки. Работа с только ссылкой на GitHub рассматриваться не будет.
 
-## Available Scripts
+## Задача:
 
-In the project directory, you can run:
+Создать **SPA** со списком карточек, на каждой из которых выводится картинка и любая информация на ваш вкус, которая пришла с эндпоинта или созданная пользователем.
 
-### `npm start`
+**Дизайн не важен**, главное, чтобы было просто и аккуратно. По стэку ориентируемся на список ниже. Остальные решения на вас.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Стэк:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Typescript
+- React
+- Redux || Zustand
 
-### `npm test`
+Для задачи можно выбрать любое публичное API, например, отсюда [Public APIs](https://github.com/public-apis/public-apis). Все полученные и созданные данные хранить во внутреннем store.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Можно использовать UI библиотеки, библиотеки для работы с формой. Будет оцениваться подход к заданию, качество и структура кода.
 
-### `npm run build`
+## Задача 1. Вывести список продуктов
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+На странице `/products` нужно:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Вывести весь список продуктов.
+- На карточке должна быть иконка лайка. При нажатии на которую, ставится или убирается like. Иконка должна подкрашиваться, когда проставлен like.
+- На карточке должна быть иконка удаления. При нажатии на которую, карточка удаляется.
+- Добавить фильтр для просмотра всех карточек и карточек, добавленных в избранное.
+- Контент карточки (текст) должен быть урезан, чтобы у карточек была одинаковая высота.
+- При клике на любом месте карточки (кроме иконки лайка и кнопки удаления) мы должны попадать на отдельную страницу карточки.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Задача 2. Страница продукта
 
-### `npm run eject`
+На странице `/products/:id` нужно:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Вывести более подробную информацию о продукте.
+- Сделать кнопку для перехода на основную страницу.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Задача 3. Создание продукта
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+На отдельной странице `/create-product` реализовать создание продукта:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Создать форму с полями. Поля обязательные и с минимальной валидацией.
+- При отправке формы, сохранить данные в общий store.
 
-## Learn More
+## Бонусы
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Реализовать пагинацию списка.
+- Реализовать возможность редактирования карточки продукта.
+- Реализовать дополнительную фильтрацию.
+- Реализовать поиск (без кнопки отправки).
