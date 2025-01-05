@@ -6,7 +6,7 @@ import CreateProduct from './pages/CreateProduct.tsx';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/TestWork-react-redux-card/">
       <Routes>
         <Route path="/products" element={<ProductList />} />
         <Route path="/products/:id" element={<ProductDetail />} />
